@@ -1,0 +1,133 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e0f7fa;
+  /* Light blue background */
+  color: #333;
+}
+
+header {
+  background-color: #ffd700;
+  /* Gold background */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner {
+  position: relative;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+nav {
+  background-color: #ffd700;
+  /* Gold background */
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffa500;
+  /* Darker gold */
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+  animation: slideIn 1s ease-in-out;
+}
+
+.project {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill-category {
+  margin-bottom: 20px;
+}
+
+.skill-category h3 {
+  margin-bottom: 10px;
+}
+
+.skill-category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-category ul li {
+  margin-bottom: 5px;
+}
+
+footer {
+  background-color: #ffd700;
+  /* Gold background */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
