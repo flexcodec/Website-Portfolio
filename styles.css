@@ -1,142 +1,132 @@
 body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #e0f7fa;
-  /* Light blue background */
-  color: #333;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa; /* Light blue background */
+    color: #333;
 }
 
 header {
-  background-color: #ffffff;
-  /* White background */
-  color: #333;
-  padding: 20px 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+    background-color: #ffffff; /* White background */
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .banner {
-  position: relative;
-  animation: fadeIn 2s ease-in-out;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .banner-image {
-  width: 100%;
-  height: auto;
-  opacity: 0.5;
-  position: absolute;
-  top: 0;
-  left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .banner-text {
-  position: relative;
-  z-index: 1;
-  text-align: center;
+    position: relative;
+    z-index: 1;
+    text-align: center;
 }
 
 nav {
-  background-color: #000;
-  /* Black background */
-  text-align: center;
-  padding: 10px 0;
+    background-color: #000; /* Black background */
+    text-align: center;
+    padding: 10px 0;
 }
 
 nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-  display: inline;
-  margin: 0 15px;
+    display: inline;
+    margin: 0 15px;
 }
 
 nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  color: #ddd;
-  /* Lighter gray */
+    color: #ddd; /* Lighter gray */
 }
 
 main {
-  padding: 20px;
+    padding: 20px;
 }
 
 section {
-  margin-bottom: 40px;
-  animation: slideIn 1s ease-in-out;
+    margin-bottom: 40px;
+    animation: slideIn 1s ease-in-out;
 }
 
 .project {
-  margin-bottom: 20px;
-  padding: 20px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .skill-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
 }
 
 .skill-card {
-  background-color: #000;
-  /* Black background */
-  color: white;
-  padding: 15px;
-  border-radius: 8px;
-  text-align: center;
-  transition: transform 0.3s, background-color 0.3s;
+    background-color: #000; /* Black background */
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s;
 }
 
 .skill-card:hover {
-  transform: scale(1.05);
-  background-color: #333;
-  /* Darker gray */
+    transform: scale(1.05);
+    background-color: #333; /* Darker gray */
 }
 
 footer {
-  background-color: #000;
-  /* Black background */
-  color: white;
-  text-align: center;
-  padding: 5px 0;
-  /* Reduced padding */
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  font-size: 0.9em;
+    background-color: #000; /* Black background */
+    color: white;
+    text-align: center;
+    padding: 5px 0; /* Reduced padding */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.9em;
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
